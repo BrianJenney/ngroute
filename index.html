@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+<div class="container-fluid">
+	<!-- Here are our links with hashbangs to request
+	our ng-routes that have been set up.
+	Those hashbangs are necessary for ng-route to work
+ -->
+<nav>
+	<ul>
+		<li><a href="/#/home">Home</a></li>
+		<li><a href="/#/pageOne">Page One</a></li>
+		<li><a href="/#/pageTwo">Page Two</a></li>
+	</ul>
+</nav>
+</div>
+
+<!-- ng view is where we will INJECT our templates when a certain route is requested -->
+
+<div ng-view></div>
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+
+	<!-- MAKE SURE TO INCLUDE ALL YOUR CONTROLLERS!!! -->
+  <script src="app.js"></script>
+
+	<!--  TODO:
+	ADD LINKS TO YOUR CONTROLLERS!!!
+	-->
+
+</body>
+</html>
