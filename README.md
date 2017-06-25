@@ -1,11 +1,4 @@
-Sometimes I just want a simple Angular Starter Template instead of a million dependencies and npm packages. 
 
-This starter sets up your views, controllers and ng-route. It must run on a local server for ng-route to work. 
+This project is incomplete, you will need to add some ng-routes, links to your controllers, and the templates to render your views.
 
-npm install -g http-server
-
-cd into your project
-
-http-server -o
-
-
+To start this project, navigate to your terminal, change directories to your clone and run `node server.js`
