@@ -27,15 +27,32 @@
 
 <div ng-view></div>
 
+<!-- FIREBASE -->
 
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAfmEBZVW_PD2Levbwe3TDHHbvhwoGg69Y",
+    authDomain: "testlogin-584db.firebaseapp.com",
+    databaseURL: "https://testlogin-584db.firebaseio.com",
+    projectId: "testlogin-584db",
+    storageBucket: "testlogin-584db.appspot.com",
+    messagingSenderId: "376726888200"
+  };
+  firebase.initializeApp(config);
+</script>
 
-	<!-- MAKE SURE TO INCLUDE ALL YOUR CONTROLLERS!!! -->
-  <script src="app.js"></script>
+<!-- NG route library -->
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
 
-	<!--  TODO:
-	ADD LINKS TO YOUR CONTROLLERS!!!
-	-->
+<script src="app.js"></script>
+
+<script src="controllers/controller1.js"></script>
+
+<script src="controllers/controller2.js"></script>
+
+<script src="controllers/controller3.js"></script>
 
 </body>
 </html>

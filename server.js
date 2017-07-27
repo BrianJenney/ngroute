@@ -12,3 +12,11 @@ app.set( 'port', ( process.env.PORT || 3000 ));
 app.listen( app.get( 'port' ), function() {
   console.log( 'Node server is running on port ' + app.get( 'port' ));
 });
+
+//my api route
+app.get('/fakeapiroute', function(req,res){
+		res.send({
+			name: (req.query.name).toUpperCase(),
+			job: req.query.job
+		})
+	})

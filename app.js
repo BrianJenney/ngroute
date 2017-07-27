@@ -12,6 +12,14 @@ config(['$routeProvider', function($routeProvider) {
 	    templateUrl: 'views/home.html', //this is the page we will return
 	    controller: 'HomeCtrl' //this is the controller we will use
 	  })
+  .when('/pageOne', {
+      templateUrl: 'views/pageOne.html',
+      controller: 'PageOneCtrl'
+    })
+  .when('/pageTwo', {
+          templateUrl: 'views/pageTwo.html',
+          controller: 'PageTwoCtrl'
+    })
 
     //TODO:
     //Uh oh, looks like the routes for pageOne and pageTwo are missing!!!
